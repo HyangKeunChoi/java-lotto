@@ -12,4 +12,5 @@
 
 1. ADD - test코드 작성
 2. ADD - 비즈니스로직 작성
-3. Refactor
+3. fixed
+4. Refactor
