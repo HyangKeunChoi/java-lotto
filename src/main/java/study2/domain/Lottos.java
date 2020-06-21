@@ -34,4 +34,17 @@ public class Lottos {
 		
 		return lottos;
 	}
+	
+	public static List<Integer> winNumSplit(String inputWinNumber) {
+		if (inputWinNumber.equals("") || inputWinNumber == null) {
+			throw new IllegalArgumentException("공백이나 null은 안됩니다.");
+		}
+
+		return 	Arrays.asList(inputWinNumber.replace(" ", "")
+				.split(","))				
+				.stream()
+				.mapToInt(Integer::parseInt)
+				.boxed()
+				.collect(Collectors.toList());				
+	}
 }
